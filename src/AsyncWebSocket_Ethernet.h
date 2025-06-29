@@ -33,9 +33,10 @@
 #include <Arduino.h>
 
 // Ethernet
-#if defined(ESP8266)
-  #include <ESPAsyncTCP.h>
+#if defined(ESP32)
+  #include <AsyncTCP.h>
 #endif
+
 
 #define WS_MAX_QUEUED_MESSAGES 32
 //#define WS_MAX_QUEUED_MESSAGES 8
