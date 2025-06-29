@@ -34,6 +34,13 @@
   #include <ESPAsyncTCP.h>
 #endif
 
+
+#if defined(ESP32)
+  #include <AsyncTCP.h>
+#endif
+
+
+
 /////////////////////////////////////////////////////////
 
 #include "AsyncWebServer_Ethernet.hpp"
