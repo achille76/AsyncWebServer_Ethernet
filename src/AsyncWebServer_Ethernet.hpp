@@ -28,9 +28,12 @@
 #ifndef _ASYNC_WEBSERVER_ETHERNET_HPP_
 #define _ASYNC_WEBSERVER_ETHERNET_HPP_
 
-#if !defined(ESP8266)
-  #error This code is curretly intended to run only on the ESP8266 platform
-#endif  
+
+#if !defined(ESP32)
+    #error This code is curretly intended to run only on the ESP32 platform  
+#endif
+
+
 
 /////////////////////////////////////////////////////////
 
@@ -48,7 +51,7 @@
 	#if defined(ARDUINO_BOARD)
 	  #define BOARD_NAME			ARDUINO_BOARD
 	#else
-	  #define BOARD_NAME			"ESP8266"
+	  #define BOARD_NAME			"ESP32"
 	#endif	
 #endif
 
@@ -63,8 +66,8 @@
 #include "Arduino.h"
 #include <functional>
 
-#if defined(ESP8266)
-  #include <ESPAsyncTCP.h>
+#if defined(ESP32)
+  #include <AsyncTCP.h>
 #endif
 
 #include "AsyncWebServer_Ethernet_Debug.h"
