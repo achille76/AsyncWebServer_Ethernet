@@ -32,8 +32,8 @@
 
 #include <Arduino.h>
 
-#if defined(ESP8266)
-  #include <ESPAsyncTCP.h>
+#if defined(ESP32)
+  #include <AsyncTCP.h>
 #endif
 
 #include <AsyncWebServer_Ethernet.hpp>
