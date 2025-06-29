@@ -30,11 +30,6 @@
 
 /////////////////////////////////////////////////////////
 
-#if defined(ESP8266)
-  #include <ESPAsyncTCP.h>
-#endif
-
-
 #if defined(ESP32)
   #include <AsyncTCP.h>
 #endif
